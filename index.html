@@ -17,12 +17,12 @@
             <!-- card container -->
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- triangle  -->
-                <div class="card w-72 bg-base-100 shadow-xl">
+                <div class="card w-72 bg-base-100 ">
                     <figure><img src="images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body text-center items-center">
                         <h2 class="card-title text-center">Triangle</h2>
                         <p class="text-center">Area (A) = 0.5 X B X H</p>
-                        <div class="">
+                        <div>
                             <input id="triangle-base" class="w-16 py-1 px-2 rounded border-2" type="text"
                                 placeholder="b">
                             <span class="mr-2">cm</span>
@@ -39,14 +39,24 @@
                     </div>
                 </div>
                 <!-- Rectangle  -->
-                <div class="card w-72 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                <div class="card w-72 bg-base-100 ">
+                    <div class="">
+                        <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                    </div>
+                    <div class="card-body text-center items-center">
+                        <h2 class="card-title">Rectangle</h2>
+                        <p class="text-xl">Area (A) = W x L</p>
+                        <div>
+                            <input class="w-16 py-1 px-2 border-2 rounded" type="text" placeholder="w">
+                            <span class="mr-3">cm</span>
+                            <input class="w-16 py-1 px-2 border-2 rounded" type="text" placeholder="l">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-xl">Area: <span id=""></span><span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div class="card-actions w-full">
+                            <button onclick="calculatorRectangleArea()" class="btn btn-primary w-full">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -110,6 +120,7 @@
     <footer></footer>
     <!-- script added -->
     <script src="script/triangle-cal.js"></script>
+    <script src="script/rectrangle-cal.js"></script>
 </body>
 
 </html>
