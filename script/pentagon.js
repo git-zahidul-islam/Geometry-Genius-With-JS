@@ -1,13 +1,13 @@
 function pentagonCalculateArea() {
-    const perimeter = getElementById('pentagon-perimeter');
-    const apothem = getElementById('pentagon-apothem');
+    const perimeter = getInputValueById('pentagon-perimeter');
+    const apothem = getInputValueById('pentagon-apothem');
     const area = 0.5 * perimeter * apothem
     // display
     setInnerTextById('pentagon-area',area);
 };
 
 // reuse function
-function getElementById(inputField) {
+function getInputValueById(inputField) {
     const inputFieldId = document.getElementById(inputField);
     const inputFieldText = inputFieldId.value;
     const value = parseFloat(inputFieldText);
