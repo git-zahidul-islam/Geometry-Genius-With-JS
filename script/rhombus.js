@@ -1,0 +1,8 @@
+function calculateRhombusArea(){
+    const d1 = getInputValueById('rhombus-d1')
+    const d2 = getInputValueById('rhombus-d2')
+
+    const area = 0.5 * d1 * d2;
+    // set input
+    setInnerTextById('rhombus-area',area);
+}

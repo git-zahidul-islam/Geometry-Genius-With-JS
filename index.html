@@ -15,9 +15,9 @@
         <!-- main container -->
         <div class="flex flex-col md:flex-row">
             <!-- card container -->
-            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="flex-1 grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <!-- triangle  -->
-                <div class="card w-72 bg-base-100 ">
+                <div class="card w-72 bg-base-100 border-2 p-2">
                     <figure><img src="images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body text-center items-center">
                         <h2 class="card-title text-center">Triangle</h2>
@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <!-- Rectangle  -->
-                <div class="card w-72 bg-base-100 ">
+                <div class="card w-72 bg-base-100 border-2 p-2">
                     <div class="">
                         <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
                     </div>
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <!-- Parallelogram  -->
-                <div class="card w-72 bg-base-100 ">
+                <div class="card w-72 bg-base-100 border-2 p-2">
                     <div class="">
                         <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                     </div>
@@ -91,19 +91,27 @@
                     </div>
                 </div>
                 <!-- Rhombus  -->
-                <div class="card w-72 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                <div class="card w-72 bg-base-100 border-2 p-2">
+                    <figure><img src="images/rhombus.png" alt="Shoes" /></figure>
+                    <div class="card-body items-center">
+                        <h2 class="card-title">Rhombus</h2>
+                        <p class="text-xl">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                        <div>
+                            <input class="w-16 py-1 px-2 border-2 rounded" type="text" name="" id="rhombus-d1">
+                            <span>cm</span>
+                            <input class="w-16 py-1 px-2 border-2 rounded" type="text" name="" id="rhombus-d2">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-xl">Area: <span id="rhombus-area">0</span> <span>cm<sup>2</sup></span></p>
+                        </div>
+                        <div class="card-actions w-full">
+                            <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Buy Now</button>
                         </div>
                     </div>
                 </div>
                 <!-- Pentagon  -->
-                <div class="card w-72 bg-base-100 shadow-xl">
+                <div class="card w-72 bg-base-100 border-2 p-2">
                     <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
                     <div class="card-body items-center">
                         <h2 class="card-title">Pentagon</h2>
@@ -125,15 +133,17 @@
                     </div>
                 </div>
                 <!-- Ellipse  -->
-                <div class="card w-72 bg-base-100 shadow-xl">
+                <div class="card w-72 bg-base-100 border-2 p-2">
                     <figure><img src="images/ellipse.png" alt="Shoes" /></figure>
                     <div class="card-body items-center">
                         <h2 class="card-title">Ellipse</h2>
                         <p class="text-xl">Area (A) = πab</p>
                         <div>
-                            <input class="w-16 py-1 px-2 border-2 rounded" type="text" name="" id="ellipse-major" placeholder="major">
+                            <input class="w-16 py-1 px-2 border-2 rounded" type="text" name="" id="ellipse-major"
+                                placeholder="major">
                             <span>cm</span>
-                            <input class="w-16 py-1 px-2 border-2 rounded" type="text" name="" id="ellipse-minor" placeholder="minor">
+                            <input class="w-16 py-1 px-2 border-2 rounded" type="text" name="" id="ellipse-minor"
+                                placeholder="minor">
                             <span>cm</span>
                         </div>
                         <div>
@@ -160,6 +170,7 @@
     <script src="script/parallelogram-cal.js"></script>
     <script src="script/pentagon.js"></script>
     <script src="script/ellipse.js"></script>
+    <script src="script/rhombus.js"></script>
 </body>
 
 </html>
