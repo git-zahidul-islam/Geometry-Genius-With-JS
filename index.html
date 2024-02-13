@@ -47,13 +47,16 @@
                         <h2 class="card-title">Rectangle</h2>
                         <p class="text-xl">Area (A) = W x L</p>
                         <div>
-                            <input class="w-16 py-1 px-2 border-2 rounded" type="text" placeholder="w">
+                            <input id="rectangle-width" class="w-16 py-1 px-2 border-2 rounded" type="text"
+                                placeholder="w">
                             <span class="mr-3">cm</span>
-                            <input class="w-16 py-1 px-2 border-2 rounded" type="text" placeholder="l">
+                            <input id="rectangle-length" class="w-16 py-1 px-2 border-2 rounded" type="text"
+                                placeholder="l">
                             <span>cm</span>
                         </div>
                         <div>
-                            <p class="text-xl">Area: <span id=""></span><span>cm<sup>2</sup></span></p>
+                            <p class="text-xl">Area: <span id="rectangle-show-ans"></span> <span>cm<sup>2</sup></span>
+                            </p>
                         </div>
                         <div class="card-actions w-full">
                             <button onclick="calculatorRectangleArea()" class="btn btn-primary w-full">Buy Now</button>
@@ -61,14 +64,27 @@
                     </div>
                 </div>
                 <!-- Parallelogram  -->
-                <div class="card w-72 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                <div class="card w-72 bg-base-100 ">
+                    <div class="">
+                        <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
+                    </div>
+                    <div class="card-body text-center items-center">
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p class="text-xl">Area (A) = b x h</p>
+                        <div>
+                            <input id="parallelogram-b" class="w-16 py-1 px-2 border-2 rounded" type="text"
+                                placeholder="b">
+                            <span class="mr-3">cm</span>
+                            <input id="parallelogram-h" class="w-16 py-1 px-2 border-2 rounded" type="text"
+                                placeholder="h">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-xl">Area: <span id="parallelogram-show-ans"></span> <span>cm<sup>2</sup></span>
+                            </p>
+                        </div>
+                        <div class="card-actions w-full">
+                            <button onclick="calculatorParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
